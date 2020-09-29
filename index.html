@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="YUGIOH, API, CARDS, YU-GI-OH">
+  <meta name="author" content="Erik Stephanovich">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>YU-GI-OH API</title>
+</head>
+<body>
+    <div id="container">
+        <header class="header" id="header">
+            <div class="menuLogo">
+                <a href="index.html" id="linkIndex" title="inicio da pagina">
+                    <h2>
+                        YU-GI-OH API
+                    </h2>
+                </a>
+            </div>
+            <div class="topo">
+              <div class="imgBanner">
+                  <img src="images/magoNegro.png" alt="Imagem do mago negro" class="Imagem do mago negro">
+                </div>
+                <div class="textBanner">
+                    <p>Bem-vindos ao Yu-Gi-Oh API. Aqui você pode pesquisar cartas e ver informações sobre elas. Com nosso filtro de busca fica bem fácil achar a carta que você procura. Experimente!</p>
+                </div>
+                <div class="imgBanner" id="esquerda">
+                  <img src="images/feiticeiraNegra.png" alt="Imagem da feiticeira negra" class="Imagem da feiticeira negra">
+                </div>
+            </div>
+        </header>
+        <nav class="nav">
+            <ul class="menu" id="menu">
+                <li> <a href="#header" class="menuItem" title="Inicio da página">INICIO</a></li>
+                <li> <a href="#pesquisa" class="menuItem" title="Buscar cartas">CARTAS</a></li>
+                <li> <a href="#contato" class="menuItem" title="Contato">CONTATO</a></li>
+                <li> <a href="assessment.html" class="menuItem" title="Página de assessment">ASSESSMENT</a></li>
+            </ul>
+        </nav>
+        <main>
+          <section class="pesquisa" id="pesquisa">
+              <div class="textoBusca">
+                  <h2 id="textoBusca">
+                      Busque por uma carta especifica. 
+                      <br>
+                      Use o filtro para uma busca mais refinada.
+                  </h2>
+              </div>
+              <div>
+                  <div class="tipoBusca">
+                      <select id="select">
+                          <option id="0" value="all">Todos os tipos</option>
+                          <option id="1" value="Normal%20Monster">Normal Monster</option>
+                          <option id="2" value="Spell%20Card">Spell Card</option>
+                          <option id="3" value="Trap%20Card">Trap Card</option>
+                      </select>
+                      <input type="text" placeholder="Pesquise uma carta" id="termoBusca">
+                  </div>
+                  <div class="pad">
+                      <button class="btn" onclick="buscar()"><i class="fa fa-search"></i> BUSCAR</button> 
+                  </div>
+                  <div class="hr"></div>
+                </div>
+            </section>
+            <div id="lista" class="divLista">
+            </div>
+            <section id="contato" class="secContato">
+                <h2 class="formatContato">Contato</h2>
+                <div class="hr"></div>
+                <div class="divContato">
+                    <div class="form">
+                        <form class="inputs">
+                            <div>
+                                <input type="text" name="nomeForm" id="nomeForm" placeholder="Nome" required>
+                            </div>
+                            <div>
+                                <input type="email" name="emailForm" placeholder="Email" required>
+                            </div>
+                            <div>
+                                <textarea name="msgForm" placeholder="Mensagem" required cols="50" rows="5"></textarea>
+                            </div>
+                            <div>
+                                <button type="submit"><i class="fa fa-paper-plane fa_custom"></i> ENVIAR</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="textContato">
+                        <h3>
+                            Fale conosco
+                        </h3>
+                        <p>
+                            Utilize nosso formulário de contato ao lado para deixar criticas, elogios, feedbacks ou reportar um erro.
+                        </p>
+                        <p>Ou se preferir use nossas redes sociais!</p>
+                        <div class="redesS">
+                            <a href="https://www.fb.com/" class="fb" target="_blank" title="Abrir facebook oficial"><i class="fa fa-facebook-square fa_custom fa-3x tresem"></i>
+                            </a>
+                            <a href="https://twitter.com/" class="twitter" target="_blank" title="Abrir twitter oficial">
+                                <i class="fa fa-twitter-square fa_custom fa-3x"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="rodape" id="rodape">
+                <div class="divRodape">
+                    <div class="textRodape">
+                        <p>© Copyright - Erik Stephanovich</p>
+                     </div>
+                     <div class="seta">
+                         <a href="#header" title="Voltar ao topo"><i class="fa fa-angle-up"></i></a>
+                     </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

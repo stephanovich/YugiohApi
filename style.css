@@ -1,0 +1,800 @@
+body{
+    background-color: whitesmoke;
+    font-family: 'Rubik', sans-serif;
+}
+#container{
+    width: 940px;
+    margin: 0 auto;
+    background-color: white;
+}
+.header{
+    background-color: blueviolet;
+    background-image: linear-gradient(to right, #ba68c8, #ab47bc , #883997, #790e8b);
+    color: white;
+    margin: 0 auto;
+    padding-top: 5px;
+    border-radius: 5px 5px 0 0;
+}
+.menuLogo{
+    text-align: center;
+    text-shadow: 2px 2px #000000;
+
+}
+#linkIndex{
+    color: white;
+    text-decoration: none;
+}
+.topo{
+    width: 100%;
+    height: 80%;
+    display: flex;
+}
+.textBanner{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 45px;
+    padding-top: 10px;
+    text-shadow: 2px 2px #000000;
+}
+#esquerda{
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+.nav{
+    text-align: center;
+    background-color: blueviolet;
+    /* border-radius: 0 0 5px 5px; */
+    /* background-image: linear-gradient(to right, #ba68c8, #ab47bc , #883997, #790e8b); */
+    background-color:  #790e8b;
+    position: sticky;
+    top: 0;
+}
+.menu{
+    font-size: 1.3em;
+    padding: 10px 0;
+}
+li{
+    display: inline;
+    margin-right: 20px;
+    text-shadow: 2px 2px #000000;
+}
+ul{
+    margin: 0;
+}
+.menuItem{
+    color: white;
+    text-decoration: none;
+}
+.menuItem:hover{
+    text-decoration: underline;
+    background-color: #ba68c8;
+
+}
+.pesquisa{
+    margin-top: 30px;
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    padding: 10px 0;
+    /* margin: 20px auto; */
+}
+.tipoBusca{
+    margin-bottom: 12px;
+}
+.pad{
+    padding-bottom: 20px;
+}
+.tipoBusca input[type=text]{
+    width: 40%;
+    padding: 12px 20px;
+    height: 45px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.tipoBusca input[type=text]:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19); 
+}
+#select{
+    width: 20%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+#select:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.btn{
+    width: 60%;
+    height: 40px;
+    background-color: #790e8b;
+    color: white;
+    border: 2px solid #790e8b;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+.btn:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.divLista{
+    padding-top: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+.divAle{
+    width: 100%;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: inline-block;
+}
+.centerErro{
+    text-align: center;
+    margin: 0;
+    margin-bottom: 50px;
+    padding: 0;
+}
+.divImg{
+    width: 30%;
+    display: inline-block;
+}
+.divImg:hover {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.randomImg{
+    width: 100%;
+    height: 100%;
+}
+.divLink{
+    width: 67%;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align: top;
+    line-height: 1.5em;
+}
+.divTitulo{
+    font-weight: bold;
+    color: blueviolet;
+    margin-top: -15px;
+    cursor: pointer;
+}
+.some{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 600ms, opacity 600ms ease-out;
+}
+.aparece{
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 600ms, opacity 600ms ease-in;
+}
+b{
+    color: blueviolet;
+}
+.p{
+    margin: 2px 0;
+}
+.secContato{
+    background-color: white;
+    border-bottom: 5px;
+}
+.formatContato{
+    font-weight: bold;
+    color: blueviolet;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.hr{
+    height: 1px;
+    background-image: linear-gradient(to right, #FFFFFF,  #790e8b,  #790e8b,#FFFFFF );
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.divContato{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+}
+.form{
+    text-align: center;
+    border-right: 1px solid #790e8b; 
+}
+.textContato{
+    flex-wrap: wrap;
+    flex: 1;
+    width: 50%;
+}
+.form{
+    flex-wrap: wrap;
+    flex: 1;
+    width: 50%;
+}
+.inputs input{
+    width: 80%;
+    padding: 12px 20px;
+    height: 45px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.inputs textarea{
+    width: 80%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+
+}
+.inputs button {
+    width: 80%;
+    height: 40px;
+    background-color: #790e8b;
+    color: white;
+    border: 2px solid #790e8b;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+ }
+.textContato h3{
+    margin: 0;
+    padding: 0;
+    color: blueviolet;
+}
+.textContato{
+    font-size: 18px;
+    margin-left: 10px;
+}
+.redesS a{
+    text-decoration: none;
+}
+.redesS a:hover{
+    text-decoration: none;
+    cursor: pointer;
+    background-color: white;
+}
+.fb{
+    color: #3b5998;
+    margin-right: 5px;
+}
+.twitter{
+    color: #00ACEE;
+}
+.rodape{
+    /* text-align: left; */
+    margin-top: 30px;
+    background-color:  #790e8b;
+    color: white;
+    border-radius: 0 0 5px 5px  ;
+}
+.divRodape{
+    display: flex;
+}
+.textRodape{
+    text-align: right;
+    width: 63%;
+    padding: 10px;
+}
+.textRodape p{
+    margin: 0;
+}
+.seta a{
+    margin: 0;
+    cursor: pointer;
+    color: white;
+}
+.seta{
+    text-align: right;
+    width: 37%;
+    padding: 10px;
+}
+.padding{
+    padding: 10px;
+}
+@media screen and (min-width: 768px) and (max-width: 939px) and
+ (orientation: portrait){
+    #container{
+    width: 100%;
+    font-size: 18px;
+    }
+    .divContato{
+        display: block;
+    }
+    .menu{
+        font-size: 20px;
+        padding: 10px 0;
+    }
+    .form{
+        text-align: center;
+        border-right: none;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    .textContato{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .textBanner{
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+        font-size: 20PX;
+        margin-top: 30px;
+        width: 50%;
+    }
+    .imgBanner{
+        width: 25%;
+    }
+    .mgNegro{
+        width: 100%;
+    }
+    .divLink{
+        line-height: 1em;
+    }
+    .divTitulo h2{
+        font-size: 1.1em;
+    }
+    .textRodape{
+        text-align: right;
+        width: 83%;
+        padding: 10px;
+    }
+    #select{
+        font-size: 16px;
+        padding: 12px 12px;
+    }
+    .tipoBusca input[type=text]{
+        font-size: 16px;
+    }
+    .btn{
+        font-size: 16px;
+    }
+    .divImg:hover {
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        -moz-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+@media screen and (max-width: 480px) and (orientation: portrait){
+    /* body{
+        font-family: none;
+    } */
+    #container{
+        width: 100%;
+        font-size: 18px;
+    }
+    #container{
+        width: 100%;
+        font-size: 18px;
+    }
+    .divContato{
+        display: block;
+    }
+    .form{
+        text-align: center;
+        border-right: none;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    .textContato{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .textBanner{
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 10px;
+        width: 100%;
+    }
+    .menuLogo h2{
+        margin-top: 15px;
+        margin-bottom: 0px;
+        padding: 0;
+    }
+    .imgBanner{
+        display: none;
+    }
+    .menu{
+        font-size: 16px;
+        padding: 10px 0;
+    }
+    li{
+        margin: 0 5px;
+    }
+    #select{
+        font-size: 16px;
+        padding: 12px 12px;
+        width: 80%;
+        margin-bottom: 10px;
+    }
+    .tipoBusca input[type=text]{
+        font-size: 16px;
+        width: 80%;
+    }
+    .btn{
+        font-size: 16px;
+        width: 80%;
+    }
+    .divAle{
+        text-align: center;
+        margin-bottom: 20px;
+        padding-top: 10px;
+    }
+    .divImg{
+        width: 50%;
+    }
+    .divLink{
+        line-height: 1em;
+    }
+    .aparece{
+        text-align: justify;
+    }
+    .some{
+        text-align: justify;  
+    }
+    .divTitulo h2{
+        font-size: 1.1em;
+    }
+    .textRodape{
+        text-align: right;
+        width: 95%;
+        padding: 10px;
+    }
+    .seta{
+        width: 5%;
+    }
+    .divImg:hover {
+        -webkit-transition: none;
+        -moz-transition: none;
+        transition: none;
+        -moz-transform: none;
+        -webkit-transform: none;
+        -o-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+    .textContato{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 640px) and (orientation: landscape){
+    #container{
+        width: 100%;
+        font-size: 18px;
+    }
+    .divContato{
+        display: block;
+    }
+    .menu{
+        font-size: 20px;
+        padding: 10px 0;
+    }
+    .form{
+        text-align: center;
+        border-right: none;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    .textBanner{
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 10px;
+        width: 100%;
+    }
+    .menuLogo h2{
+        margin-top: 15px;
+        margin-bottom: 0px;
+        padding: 0;
+    }
+    .imgBanner{
+        display: none;
+    }
+    .divLink{
+        width: 66%;
+        line-height: 1em;
+    }
+    .divTitulo h2{
+        font-size: 1em;
+        margin-bottom: 5px;
+    }
+    .aparece{
+        font-size: 14px;
+        text-align: justify;
+    }
+    .some{
+        font-size: 14px; 
+        text-align: justify;
+    }
+    .textRodape{
+        text-align: right;
+        width: 83%;
+        padding: 10px;
+    }
+    #select{
+        font-size: 14px;
+        padding: 12px 12px;
+    }
+    .tipoBusca input[type=text]{
+        font-size: 15px;
+    }
+    .btn{
+        font-size: 15px;
+    }
+    .seta{
+        width: 29%;
+    }
+    .divImg:hover {
+        -webkit-transition: none;
+        -moz-transition: none;
+        transition: none;
+        -moz-transform: none;
+        -webkit-transform: none;
+        -o-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+    .textContato{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 640px) and (min-width: 481px) 
+and (orientation: portrait){
+    #container{
+        width: 100%;
+        font-size: 18px;
+    }
+    .divContato{
+        display: block;
+    }
+    .menu{
+        font-size: 18px;
+        padding: 10px 0;
+    }
+    .form{
+        text-align: center;
+        border-right: none;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    .textContato{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .textBanner{
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 10px;
+        width: 100%;
+    }
+    .menuLogo h2{
+        margin-top: 15px;
+        margin-bottom: 0px;
+        padding: 0;
+    }
+    .imgBanner{
+        display: none;
+    }
+    .divAle{
+        text-align: center;
+        margin-bottom: 20px;
+        padding-top: 10px;
+    }
+    .divImg{
+        width: 50%;
+    }
+    .divLink{
+        line-height: 1em;
+    }
+    .aparece{
+        text-align: justify;
+    }
+    .some{
+        text-align: justify;  
+    }
+    .divTitulo h2{
+        font-size: 1.1em;
+    }
+    .textRodape{
+        text-align: right;
+        width: 83%;
+        padding: 10px;
+    }
+    #select{
+        font-size: 14px;
+        padding: 12px 12px;
+        width: 70%;
+        margin-bottom: 10px;
+    }
+    .tipoBusca input[type=text]{
+        font-size: 15px;
+        width: 70%;
+    }
+    .btn{
+        font-size: 15px;
+        width: 70%;
+    }
+    .seta{
+        width: 19%;
+    }
+    .divImg:hover {
+        -webkit-transition: none;
+        -moz-transition: none;
+        transition: none;
+        -moz-transform: none;
+        -webkit-transform: none;
+        -o-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+}
+@media screen and (min-width: 940px) and (orientation: portrait){
+    .seta{
+        width: 32%;
+    }
+    #container{
+        font-size: 22px;
+    }
+    .form{
+        text-align: center;
+        border-right: none;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        font-size: 22px;
+    }
+    .textContato{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 22px;
+    }
+    .divContato{
+        display: block;
+    }
+    .inputs input{
+        font-size: 20px;
+    }
+    .inputs button{
+        font-size: 20px;
+    }
+    .inputs textarea{
+        font-size: 20px;
+    }
+    #select{
+        font-size: 20px;
+    }
+    .tipoBusca input{
+        font-size: 20px;
+    }
+    .btn{
+        font-size: 20px;
+    }
+}
+@media screen and (min-width: 641px) and (max-width: 767px){
+    #container{
+        width: 100%;
+        font-size: 18px;
+    }
+    .divContato{
+        display: block;
+    }
+    .menu{
+        font-size: 18px;
+        padding: 10px 0;
+    }
+    .form{
+        text-align: center;
+        border-right: none;
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+    .textContato{
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .textBanner{
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 10px;
+        width: 100%;
+    }
+    .menuLogo h2{
+        margin-top: 15px;
+        margin-bottom: 0px;
+        padding: 0;
+    }
+    .imgBanner{
+        display: none;
+    }
+    .divLink{
+        width: 66%;
+        line-height: 1em;
+    }
+    .divTitulo h2{
+        font-size: 1em;
+        margin-bottom: 5px;
+    }
+    .aparece{
+        font-size: 15px;
+        text-align: justify;
+    }
+    .some{
+        font-size: 15px; 
+        text-align: justify;
+    }
+    .textRodape{
+        text-align: right;
+        width: 83%;
+        padding: 10px;
+    }
+    #select{
+        font-size: 14px;
+        padding: 12px 2px;
+    }
+    .tipoBusca input[type=text]{
+        font-size: 15px;
+    }
+    .btn{
+        font-size: 15px;
+    }
+    .seta{
+        width: 29%;
+    }
+    .divImg:hover {
+        -webkit-transition: none;
+        -moz-transition: none;
+        transition: none;
+        -moz-transform: none;
+        -webkit-transform: none;
+        -o-transform: none;
+        -ms-transform: none;
+        transform: none;
+    }
+}
